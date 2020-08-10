@@ -1,5 +1,5 @@
 {
-	"name": "array.ahk",
+	"name": "array.ahk.documentation",
 	"version": "0.1.4",
 	"description": "Conversion of JavaScript's Array methods to AutoHotkey",
 	"main": "export.ahk",
@@ -7,8 +7,11 @@
 		"type": "git",
 		"url": "git+https://github.com/Chunjee/array.ahk.git"
 	},
-	"dependencies": { },
-	"devDependencies": { },
+	"dependencies": {
+		"docsify": "^4.11.4",
+		"docsify-darklight-theme": "^3.0.6"
+	},
+	"devDependencies": {},
 	"author": "Shawn Brooker",
 	"contributors": [
 		{
