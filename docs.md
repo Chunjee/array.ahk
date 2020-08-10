@@ -324,8 +324,8 @@ creates a new array populated with the results of calling a provided function on
 
 #### Example
 ```autohotkey
-[1,2,3].map(func("fn_timesTwo"))
-; => [2,4,6]
+[1, 2, 3].map(func("fn_timesTwo"))
+; => [2, 4, 6]
 
 fn_timesTwo(o)
 {
@@ -362,7 +362,7 @@ Executes a reducer function on each element of the array, resulting in single ou
 
 #### Example
 ```autohotkey
-[1,2,3].reduce(func("fn_addition"))
+[1, 2, 3].reduce(func("fn_addition"))
 ; => 6
 
 fn_addition(a, b)
