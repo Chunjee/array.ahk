@@ -16,11 +16,11 @@ Used to join two or more arrays. This method does not change the existing arrays
 
 #### Example
 ```autohotkey
-[1,2,3].concat([4,5,6])
-; => [1,2,3,4,5,6]
+[1, 2, 3].concat([4, 5, 6])
+; => [1, 2, 3, 4, 5, 6]
 
-[1,2,3].concat([4,5,6], [7,8,9])
-; => [1,2,3,4,5,6,7,8,9]
+[1, 2, 3].concat([4, 5, 6], [7, 8, 9])
+; => [1, 2, 3, 4, 5, 6, 7, 8, 9]
 ```
 <!-- end of concat -->
 
@@ -43,10 +43,10 @@ Tests whether all elements in the array pass the test implemented by the provide
 
 #### Example
 ```autohotkey
-[2,4,6].every(func("fn_isEven")
+[2, 4, 6].every(func("fn_isEven")
 ; => true
 
-[2,5,7].every(func("fn_isEven")
+[2, 5, 7].every(func("fn_isEven")
 ; => false
 
 fn_isEven(o)
@@ -78,8 +78,8 @@ Fill all the array elements with a static value.
 
 #### Example
 ```autohotkey
-[1,2,3].fill(1)
-; => [1,1,1]
+[1, 2, 3].fill(1)
+; => [1, 1, 1]
 ```
 <!-- end of fill -->
 
@@ -100,8 +100,8 @@ Creates a new array with all elements that pass the test implemented by the prov
 
 #### Example
 ```autohotkey
-[1,2,3,4,5,6].filter(func("fn_filterIsEven"))
-; => [2,4,6]
+[1, 2, 3, 4, 5, 6].filter(func("fn_filterIsEven"))
+; => [2, 4, 6]
 
 fn_filterIsEven(o) {
 	if (mod(o, 2) = 0) {
@@ -129,7 +129,7 @@ Returns the value of the first element in the provided array that satisfies the 
 
 #### Example
 ```autohotkey
-[1,2,3,4,5,6].find(func("fn_findGreaterThanFive"))
+[1, 2, 3, 4, 5, 6].find(func("fn_findGreaterThanFive"))
 ; => 6
 
 fn_findGreaterThanFive(o)
@@ -158,7 +158,7 @@ Returns the index of the first element in the array that satisfies the provided 
 
 #### Example
 ```autohotkey
-[1,2,3,4].findIndex(func("fn_findIndexFunc"))
+[1, 2, 3, 4].findIndex(func("fn_findIndexFunc"))
 ; => 2
 
 fn_findIndexFunc(o) {
@@ -190,7 +190,7 @@ Executes a provided function once for each array element. The function is invoke
 
 #### Example
 ```autohotkey
-[1,2,3,4].forEach(func("fn_forEachFunc"))
+[1, 2, 3, 4].forEach(func("fn_forEachFunc"))
 ; => msgboxes 1 then 2 then 3 then 4
 
 fn_forEachFunc(value) {
@@ -218,10 +218,10 @@ Determines whether an array includes a certain value among its entries, returnin
 
 #### Example
 ```autohotkey
-[1,2,3,4].includes(2)
+[1, 2, 3, 4].includes(2)
 ; => true
 
-[1,2,3,4].includes("Socrates")
+[1, 2, 3, 4].includes("Socrates")
 ; => false
 ```
 <!-- end of includes -->
@@ -245,7 +245,7 @@ Returns the first index at which a given element can be found in the array, or `
 
 #### Example
 ```autohotkey
-[1,2,3,4].indexOf(2)
+[1, 2, 3, 4].indexOf(2)
 ; => 2
 
 ["Bill", "Ted"].indexOf("Socrates")
@@ -266,12 +266,12 @@ creates and returns a new string by concatenating all of the elements in an arra
 
 
 #### Returns
-(string): A string with all array elements joined. If array.Count() is 0, the empty string is returned.
+(string): A string with all array elements joined. If array.Count() is 0, an empty string `""` is returned.
 
 
 #### Example
 ```autohotkey
-[1,2,3].join()
+[1, 2, 3].join()
 ; => "1,2,3"
 
 ["Bill", "Ted"].join(" and ")

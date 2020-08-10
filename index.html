@@ -63,14 +63,14 @@
 			plugins: [
 				function(hook) {
 					var footer = [
-						'<hr/>',
+						'<br><br><br>',
 						'<footer><center>',
-						'<span style="color: #516e7a">maintained with ⌨️ by <a href="https://github.com/chunjee">@Chunjee</span>',
+						'maintained with ⌨️ by <a href="https://github.com/chunjee">Chunjee</a>',
 						'</center></footer>'
 					].join('');
 
 					hook.afterEach(function(html) {
-						return html + footer;
+						// return html + footer;
 					});
 				}
 			]
