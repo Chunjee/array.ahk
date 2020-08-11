@@ -53,32 +53,32 @@ Usage: `Array.<fn>([params*])`
 ```autohotkey
 ; Map to doubled value
 arrayInt := [1, 5, 10]
-arrayInt.map(func("double_int"))
+arrayInt.map(func("fn_doubleInt"))
 ; => [2, 10, 20]
 
-double_int(int) {
+fn_doubleInt(int) {
 	return int * 2
 }
 
 
 ; Map to object property
 arrayObj := [{"name": "bob", "age": 22}, {"name": "tom", "age": 51}]
-arrayObj.map(func("get_name")) 
+arrayObj.map(func("fn_returnName")) 
 ; => ["bob", "tom"]
 
-get_name(obj) {
+fn_returnName(obj) {
 	return obj.name
 }
 
 
 ; Method chaining
 arrayObj := [{"name": "bob", "age": 22}, {"name": "tom", "age": 51}]
-msgbox, % arrayObj.map(func("get_prop").bind("age"))
-	.map(func("double_int"))
+msgbox, % arrayObj.map(func("fn_returnProp").bind("age"))
+	.map(func("fn_doubleInt"))
 	.join(",")
 ; => "44,102"
 
-get_prop(prop, obj) {
+fn_returnProp(prop, obj) {
 	return obj[prop]
 }
 ```
