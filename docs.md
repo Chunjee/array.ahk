@@ -169,11 +169,13 @@ fn_findIndexFunc(o) {
 	return o = 2
 }
 
-[{user: "Bill"}, {user: "Ted"}]
+users := [{user: "Bill"}, {user: "Ted"}]
+users.findIndex(func("fn_findIndexFunc2"))
+; => 2
+
 fn_findIndexFunc2(o) {
 	return o.user = "Ted"
 }
-; => 2
 ```
 <!-- end of findIndex -->
 
