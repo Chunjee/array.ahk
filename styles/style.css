@@ -76,8 +76,12 @@ body {
 	margin: 0;
 	overflow-x: hidden;
 }
-.markdown-section h2 {
-	color: #fff;
+.markdown-section h2{
+	font-size: 2rem;
+	background-color: var(--accent);;
+	margin: 0rem 10rem;
+	padding: 1rem 1rem;
+	white-space: nowrap;
 }
 img {
 	max-width: 100%;
@@ -750,13 +754,13 @@ body {
 	color: #2973b7;
 }
 .token.string {
-	color: var(--accent);
+	color: #3c8528;
 }
 .token.selector {
 	color: #6679cc;
 }
 .token.custom {
-	color: #86b9f5;
+	color: var(--accent);
 }
 .token.attr-name {
 	color: #2973b7;

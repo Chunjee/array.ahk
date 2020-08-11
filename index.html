@@ -11,7 +11,7 @@
 	<!-- appearance -->
 	<link
 		rel="stylesheet"
-		href="styles\style.css"
+		href="styles/style.css"
 		title="docsify-darklight-theme"
 		type="text/css"
 	/>
@@ -73,7 +73,43 @@
 						// return html + footer;
 					});
 				}
-			]
+			],
+
+			darklightTheme: {
+				defaultTheme : 'dark',
+				codeFontFamily : 'Roboto Mono, Monaco, courier, monospace',
+				bodyFontSize : '17px',
+				dark: {
+					accent: '#FDAD0D',
+					toogleBackground : '#ffffff',
+					background: '#091a28',
+					textColor: '#757575',
+					codeTextColor : '#ffffff',
+					codeBackgroudColor : '#0e2233',
+					borderColor : '#0d2538',
+					blockQuoteColour : '#D62828',
+					highlightColor : '#FDAD0D',
+					sidebarSublink : '#757575',
+					codeTypeColor : '#ffffff',
+					coverBackground : 'linear-gradient(to left bottom, hsl(118, 100%, 85%) 0%,hsl(181, 100%, 85%) 100%)',
+					toogleImage : 'url(https://cdn.jsdelivr.net/npm/docsify-darklight-theme@latest/icons/sun.svg)'
+				},
+				light: {
+					accent: '#FDAD0D',
+					toogleBackground : '#091a28',
+					background: '#ffffff',
+					textColor: '#34495e',
+					codeTextColor : '#525252',
+					codeBackgroudColor : '#f8f8f8',
+					borderColor : 'rgba(0, 0, 0, 0.07)',
+					blockQuoteColor : '#858585',
+					highlightColor : '#d22778',
+					sidebarSublink : '#b4b4b4',
+					codeTypeColor : '#091a28',
+					coverBackground : 'linear-gradient(to left bottom, hsl(118, 100%, 85%) 0%,hsl(181, 100%, 85%) 100%)',
+					toogleImage : 'url(https://cdn.jsdelivr.net/npm/docsify-darklight-theme@latest/icons/moon.svg)'
+				}
+			}
 		}
 	</script>
 	<script src="//unpkg.com/docsify/lib/docsify.min.js"></script>

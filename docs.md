@@ -62,6 +62,7 @@ fn_isEven(o)
 
 ## .fill
 > `array.fill(value[, start, end])`
+
 Fill all the array elements with a static value.
 
 #### Arguments
@@ -86,6 +87,7 @@ Fill all the array elements with a static value.
 
 ## .filter
 > `array.filter(func("function"))`
+
 Creates a new array with all elements that pass the test implemented by the provided function. The function is invoked with three arguments; (element, index, array).
 
 #### Arguments
@@ -115,6 +117,7 @@ fn_filterIsEven(o) {
 
 ## .find
 > `array.find(func("function"))`
+
 Returns the value of the first element in the provided array that satisfies the provided testing function. The function is invoked with three arguments; (element, index, array).
 
 #### Arguments
@@ -144,6 +147,7 @@ fn_findGreaterThanFive(o)
 
 ## .findIndex
 > `array.findIndex(func("function"))`
+
 Returns the index of the first element in the array that satisfies the provided testing function. Otherwise, it returns -1, indicating that no element passed the test. The function is invoked with three arguments; (element, index, array).
 
 #### Arguments
@@ -176,6 +180,7 @@ fn_findIndexFunc2(o) {
 
 ## .forEach
 > `array.forEach(func("function"))`
+
 Executes a provided function once for each array element. The function is invoked with three arguments; (element, index, array).
 
 #### Arguments
