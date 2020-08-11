@@ -62,6 +62,7 @@ double_int(int) {
 
 
 ; Map to object property
+arrayObj := [{"name": "bob", "age": 22}, {"name": "tom", "age": 51}]
 arrayObj.map(func("get_name")) 
 ; => ["bob", "tom"]
 
