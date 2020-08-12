@@ -76,13 +76,6 @@ body {
 	margin: 0;
 	overflow-x: hidden;
 }
-.markdown-section h2{
-	font-size: 2rem;
-	background-color: var(--accent);;
-	margin: 0rem 10rem;
-	padding: 1rem 1rem;
-	white-space: nowrap;
-}
 img {
 	max-width: 100%;
 }
@@ -664,6 +657,17 @@ body {
 	font-size: 1.75rem;
 	margin: 45px 0 0.8rem;
 }
+.markdown-section h2{
+	color: var(--background);
+	font-size: 2rem;
+	background-color: var(--accent);;
+	margin: 0px -999rem;
+	padding: 1rem 998rem;
+	white-space: nowrap;
+}
+.markdown-section h2 span{
+	color: var(--background);
+}
 .markdown-section h3 {
 	font-size: 1.5rem;
 	margin: 40px 0 0.6rem;
@@ -854,8 +858,8 @@ pre:after {
 }
 #docsify-darklight-theme {
 	position: absolute;
-	right: 10px;
-	top: 15px;
+	right: 5em;
+	top: -1em;
 	width: 25px;
 	height: 25px;
 	background-repeat: no-repeat;

@@ -1,4 +1,4 @@
-# array.ahk
+## array.ahk
 Conversion of JavaScript's Array methods to AutoHotKey
 
 AutoHotKey lacks built-in iteration helper methods (as of 1.1.33) to perform many of the common array behaviors found in other languages. This package ports most of JavaScript's Array object methods to AutoHotKey's Array object.
