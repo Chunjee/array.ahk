@@ -7,7 +7,7 @@ Used to join two or more arrays. This method does not change the existing arrays
 #### Arguments
 | Argument       | Type         | Description  |
 | :------------- | :----------- | :----------- |
-|  value*        | *            | Optional. Arrays and/or values to concatenate into a new array. If all valueN parameters are omitted, concat returns a shallow copy of the existing array on which it is called. |
+|  value*        | *            | Optional. (Default `[]`)  Arrays and/or values to concatenate into a new array. If all valueN parameters are omitted, concat returns a shallow copy of the existing array on which it is called. |
 
 
 #### Returns
@@ -69,7 +69,7 @@ Fill all the array elements with a static value.
 | Argument       | Type         | Description  |
 | :------------- | :----------- | :----------- |
 |  value         | *            | Required. The value to fill the array with. |
-|  start := 0      | number       | Optional. The index to start filling the array. If negative, it is treated as array.Count() + start |
+|  start         | number       | Optional. (Default `1`) The index to start filling the array. If negative, it is treated as array.Count() + start |
 |  end := array.Count() | number       | Optional. The value to fill the array with. If negative, it is treated as array.Count() + end |
 
 
@@ -216,7 +216,7 @@ Determines whether an array includes a certain value among its entries, returnin
 | Argument       | Type         | Description  |
 | :------------- | :----------- | :----------- |
 |  valueToFind   | *            | Required. The value to search for. |
-|  fromIndex     | number       | Optional. The index to start the search at. If the provided index value is a negative number, it is taken as the offset from the end of the array. |
+|  fromIndex     | number       | Optional. (Default `1`) The index to start the search at. If the provided index value is a negative number, it is taken as the offset from the end of the array. |
 
 
 #### Returns
@@ -243,7 +243,7 @@ Returns the first index at which a given element can be found in the array, or `
 | Argument       | Type         | Description  |
 | :------------- | :----------- | :----------- |
 |  searchElement | *            | Required. The value to search for. |
-|  fromIndex     | number       | Optional. The index to start the search at. If the provided index value is a negative number, it is taken as the offset from the end of the array. |
+|  fromIndex     | number       | Optional. (Default `1`) The index to start the search at. If the provided index value is a negative number, it is taken as the offset from the end of the array. |
 
 
 #### Returns
@@ -269,7 +269,7 @@ creates and returns a new string by concatenating all of the elements in an arra
 #### Arguments
 | Argument       | Type         | Description  |
 | :------------- | :----------- | :----------- |
-|  separator     | string       | Optional. Specifies a string to separate each pair of adjacent elements of the array. The separator is converted to a string if necessary. If omitted, the array elements are separated with a comma (","). If separator is an empty string, all elements are joined without any characters in between them. |
+|  separator     | string       | Optional. (Default `","`) Specifies a string to separate each pair of adjacent elements of the array. The separator is converted to a string if necessary. If separator is an empty string (`""`), all elements are joined without any characters in between them. |
 
 
 #### Returns
@@ -296,7 +296,7 @@ Returns the first index at which a given element can be found in the array, or `
 | Argument       | Type         | Description  |
 | :------------- | :----------- | :----------- |
 |  searchElement | *            | Required. The value to search for. |
-|  fromIndex     | number       | Optional. The index at which to start searching backwards. Defaults to the array's length minus one (array.Count()), i.e. the whole array will be searched. If the index is greater than or equal to the length of the array, the whole array will be searched. If negative, it is taken as the offset from the end of the array. Note that even when the index is negative, the array is still searched from back to front. |
+|  fromIndex     | number       | Optional. (Default `1`) The index at which to start searching backwards. Defaults to the array's length minus one (array.Count()), i.e. the whole array will be searched. If the index is greater than or equal to the length of the array, the whole array will be searched. If negative, it is taken as the offset from the end of the array. Note that even when the index is negative, the array is still searched from back to front. |
 
 
 #### Returns
@@ -462,8 +462,8 @@ Returns a shallow copy of a portion of an array into a new array object selected
 #### Arguments
 | Argument       | Type         | Description  |
 | :------------- | :----------- | :----------- |
-|  start         | number       | Optional. The index at which to start extraction. |
-|  end           | number       | Optional. The index at which to end extraction. slice extracts up to but not including end. If end is omitted, slice extracts through the end of the sequence. A negative index can be used, indicating an offset from the end of the sequence. |
+|  start         | number       | Optional. (Default `1`) The index at which to start extraction. |
+|  end           | number       | Optional. (Default `array.Count()`) The index at which to end extraction. slice extracts up to but not including end. If end is omitted, slice extracts through the end of the sequence. A negative index can be used, indicating an offset from the end of the sequence. |
 
 
 #### Returns
@@ -548,8 +548,8 @@ Changes the contents of an array by removing or replacing existing elements and/
 | Argument       | Type         | Description  |
 | :------------- | :----------- | :----------- |
 |  start         | number       | Required. The index at which to start changing the array. If greater than the length of the array, start will be set to the length of the array. In this case, no element will be deleted but the method will behave as an adding function, adding as many element as provided. If negative, it will begin that many elements from the end of the array. |
-|  deleteCount    | number       | Optional. An integer indicating the number of elements in the array to remove. |
-|  values*        | number       | Optional. The elements to add to the array. If you do not specify any elements, it will only remove elements from the array. |
+|  deleteCount    | number       | Optional. (Default `-1`) An integer indicating the number of elements in the array to remove. |
+|  values*        | number       | Optional. (Default `""`) The elements to add to the array. If you do not specify any elements, it will only remove elements from the array. |
 
 
 #### Returns
