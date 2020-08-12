@@ -306,6 +306,7 @@ main.hidden {
 body.sticky .sidebar,
 body.sticky .sidebar-toggle {
 	position: fixed;
+	background-color: var(--backgroundAccent);
 }
 .content {
 	padding-top: 60px;
