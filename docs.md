@@ -7,7 +7,7 @@ Used to join two or more arrays. This method does not change the existing arrays
 #### Arguments
 | Argument       | Type         | Description  |
 | :------------- | :----------- | :----------- |
-|  value*        | *            | Optional. (Default `[]`)  Arrays and/or values to concatenate into a new array. If all valueN parameters are omitted, concat returns a shallow copy of the existing array on which it is called. |
+|  value*        | alnum/array  | Optional. (Default `[]`)  Arrays and/or values to concatenate into a new array. If all valueN parameters are omitted, concat returns a shallow copy of the existing array on which it is called. |
 
 
 #### Returns
@@ -21,6 +21,9 @@ Used to join two or more arrays. This method does not change the existing arrays
 
 [1, 2, 3].concat([4, 5, 6], [7, 8, 9])
 ; => [1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+[].concat("Bill", "Ted")
+; => ["Bill", "Ted"]
 ```
 <!-- end of concat -->
 
@@ -34,7 +37,7 @@ Tests whether all elements in the array pass the test implemented by the provide
 #### Arguments
 | Argument       | Type         | Description  |
 | :------------- | :----------- | :----------- |
-|  function(element, index, array)      | Function     | Required. A function to be run for each element in the array. |
+|  function(element, index, array)      | function     | Required. A function to be run for each element in the array. |
 
 
 #### Returns
@@ -68,7 +71,7 @@ Fill all the array elements with a static value.
 #### Arguments
 | Argument       | Type         | Description  |
 | :------------- | :----------- | :----------- |
-|  value         | *            | Required. The value to fill the array with. |
+|  value         | alnum        | Required. The value to fill the array with. |
 |  start         | number       | Optional. (Default `1`) The index to start filling the array. If negative, it is treated as array.Count() + start |
 |  end := array.Count() | number       | Optional. The value to fill the array with. If negative, it is treated as array.Count() + end |
 
@@ -93,7 +96,7 @@ Creates a new array with all elements that pass the test implemented by the prov
 #### Arguments
 | Argument       | Type         | Description  |
 | :------------- | :----------- | :----------- |
-|  function(element, index, array)      | Function     | Required. Function is a predicate, to test each element of the array. Return `true` to keep the element, `false` otherwise. |
+|  function(element, index, array)      | function     | Required. Function is a predicate, to test each element of the array. Return `true` to keep the element, `false` otherwise. |
 
 
 #### Returns
@@ -123,7 +126,7 @@ Returns the value of the first element in the provided array that satisfies the 
 #### Arguments
 | Argument       | Type         | Description  |
 | :------------- | :----------- | :----------- |
-|  function(element, index, array)      | Function     | Required. Function to execute on each value in the array. |
+|  function(element, index, array)      | function     | Required. Function to execute on each value in the array. |
 
 
 #### Returns
@@ -153,7 +156,7 @@ Returns the index of the first element in the array that satisfies the provided 
 #### Arguments
 | Argument       | Type         | Description  |
 | :------------- | :----------- | :----------- |
-|  function(element, index, array)      | Function     | Required. Function to execute on each value in the array. |
+|  function(element, index, array)      | function     | Required. Function to execute on each value in the array. |
 
 
 #### Returns
@@ -188,7 +191,7 @@ Executes a provided function once for each array element. The function is invoke
 #### Arguments
 | Argument       | Type         | Description  |
 | :------------- | :----------- | :----------- |
-|  function(element, index, array)      | Function     | Required. Function to execute on each value in the array. |
+|  function(element, index, array)      | function     | Required. Function to execute on each value in the array. |
 
 
 #### Returns
@@ -242,7 +245,7 @@ Returns the first index at which a given element can be found in the array, or `
 #### Arguments
 | Argument       | Type         | Description  |
 | :------------- | :----------- | :----------- |
-|  searchElement | *            | Required. The value to search for. |
+|  searchElement | alnum        | Required. The value to search for. |
 |  fromIndex     | number       | Optional. (Default `1`) The index to start the search at. If the provided index value is a negative number, it is taken as the offset from the end of the array. |
 
 
@@ -264,7 +267,7 @@ Returns the first index at which a given element can be found in the array, or `
 ## .join
 > `array.join(valueToFind[, fromIndex])`
 
-creates and returns a new string by concatenating all of the elements in an array (or an array-like object), separated by commas or a specified separator string. If the array has only one item, then that item will be returned without using the separator.
+Creates and returns a new string by concatenating all of the elements in an array, separated by commas or a specified separator string. If the array has only one item, then that item will be returned without using the separator.
 
 #### Arguments
 | Argument       | Type         | Description  |
@@ -295,7 +298,7 @@ Returns the first index at which a given element can be found in the array, or `
 #### Arguments
 | Argument       | Type         | Description  |
 | :------------- | :----------- | :----------- |
-|  searchElement | *            | Required. The value to search for. |
+|  searchElement | alnum        | Required. The value to search for. |
 |  fromIndex     | number       | Optional. (Default `1`) The index at which to start searching backwards. Defaults to the array's length minus one (array.Count()), i.e. the whole array will be searched. If the index is greater than or equal to the length of the array, the whole array will be searched. If negative, it is taken as the offset from the end of the array. Note that even when the index is negative, the array is still searched from back to front. |
 
 
@@ -355,7 +358,7 @@ fn_upcase(o)
 ## .reduce
 > `array.reduce(func("function"))`
 
-Executes a reducer function on each element of the array, resulting in single output value. The reducer function is invoked with three arguments; (accumulator, element, index, array).
+Executes a reducer function on each element of the array, resulting in single output value. The reducer function is invoked with four arguments; (accumulator, element, index, array).
 
 #### Arguments
 | Argument       | Type         | Description  |
