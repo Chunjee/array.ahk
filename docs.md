@@ -421,12 +421,12 @@ Applies a function against an accumulator and each value of the array (from righ
 
 #### Example
 ```autohotkey
-[[0, 1], [2, 3], [4, 5]].reduceRight(func("fn_addition"))
+[[0, 1], [2, 3], [4, 5]].reduceRight(func("fn_reduceNestedArray"))
 ; => [4, 5, 2, 3, 0, 1]
 
-fn_concatReduce(accumulator, currentValue)
+fn_reduceNestedArray(previousValue, currentValue)
 {
-	accumulator.concat(currentValue)
+	return previousValue.concat(currentValue)
 }
 ```
 <!-- end of reduceRight -->
