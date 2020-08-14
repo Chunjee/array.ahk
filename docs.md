@@ -660,10 +660,10 @@ Does not accept any arguments.
 ; => ["Bill, "Ted, "Socrates"]
 
 array := []
-array.insert("x", "a")
-array.insert("y", "b")
-array.insert("z", "c")
+array.insert("x", "Bill")
+array.insert("y", "Ted")
+array.insert("z", "Socrates")
 array.values()
-; => ["a","b","c"]
+; => ["Bill, "Ted, "Socrates"]
 ```
 <!-- end of values -->
