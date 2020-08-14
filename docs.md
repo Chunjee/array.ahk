@@ -293,14 +293,14 @@ Creates and returns a new string by concatenating all of the elements in an arra
 ## .keys
 > `array.keys()`
 
-Returns a new Array that contains the keys for each index in the array.
+Returns a new array that contains the keys for each index in the array.
 
 #### Arguments
 Does not accept any arguments.
 
 
 #### Returns
-(array): A new array containing all indexes in the calling array.
+(array): A new array containing all keys in the calling array.
 
 
 #### Example
@@ -324,7 +324,7 @@ Returns the first index at which a given element can be found in the array, or `
 
 
 #### Returns
-(number): The last index of the element in the array;; `-1` if not found.
+(number): The last index of the element in the array; `-1` if not found.
 
 
 #### Example
@@ -639,3 +639,31 @@ msgbox, % array.join()
 ; => "Bill,Ted"
 ```
 <!-- end of unshift -->
+
+
+## .values
+> `array.values()`
+
+Returns a new array that contains the values for each element in the calling array.
+
+#### Arguments
+Does not accept any arguments.
+
+
+#### Returns
+(array): A new array containing all values in the calling array.
+
+
+#### Example
+```autohotkey
+["Bill", "Ted", "Socrates"].values()
+; => ["Bill, "Ted, "Socrates"]
+
+array := []
+array.insert("x", "a")
+array.insert("y", "b")
+array.insert("z", "c")
+array.values()
+; => ["a","b","c"]
+```
+<!-- end of values -->
