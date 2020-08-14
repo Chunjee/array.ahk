@@ -290,6 +290,27 @@ Creates and returns a new string by concatenating all of the elements in an arra
 <!-- end of join -->
 
 
+## .keys
+> `array.keys()`
+
+Returns a new Array that contains the keys for each index in the array.
+
+#### Arguments
+Does not accept any arguments.
+
+
+#### Returns
+(array): A new array containing all indexes in the calling array.
+
+
+#### Example
+```autohotkey
+["Bill", "Ted", "Socrates"].keys()
+; => [1, 2, 3]
+```
+<!-- end of keys -->
+
+
 ## .lastIndexOf
 > `array.lastIndexOf(valueToFind[, fromIndex])`
 
