@@ -68,6 +68,9 @@ fn_isEven(o)
 
 Fill all the array elements with a static value.
 
+> [!Warning]
+> This method mutates the calling array
+
 #### Arguments
 | Argument       | Type         | Description  |
 | :------------- | :----------- | :----------- |
@@ -267,7 +270,7 @@ Returns the first index at which a given element can be found in the array, or `
 ## .join
 > `array.join(valueToFind[, fromIndex])`
 
-Creates and returns a new string by concatenating all of the elements in an array, separated by commas or a specified separator string. If the array has only one item, then that item will be returned without using the separator.
+Returns a new string by concatenating all of the elements in an array, separated by commas or a specified separator string. If the array has only one item, then that item will be returned without using the separator.
 
 #### Arguments
 | Argument       | Type         | Description  |
@@ -437,6 +440,9 @@ fn_reduceNestedArray(previousValue, currentValue)
 
 Reverses an array in place. The first array element becomes the last, and the last array element becomes the first.
 
+> [!Warning]
+> This method mutates the calling array
+
 #### Arguments
 Does not accept any arguments.
 
@@ -457,6 +463,9 @@ Does not accept any arguments.
 > `array.shift()`
 
 Removes the first element from an array and returns that removed element. This method modifies the array.
+
+> [!Warning]
+> This method mutates the calling array
 
 #### Arguments
 Does not accept any arguments.
@@ -542,6 +551,9 @@ fn_isEven(o)
 
 Sorts the elements of an array in place and returns the sorted array. The default sort order is ascending. The function is invoked with two arguments; (firstElement, secondElement).
 
+> [!Warning]
+> This method mutates the calling array
+
 #### Arguments
 | Argument       | Type         | Description  |
 | :------------- | :----------- | :----------- |
@@ -567,6 +579,9 @@ Sorts the elements of an array in place and returns the sorted array. The defaul
 > `array.splice(start, [end])`
 
 Changes the contents of an array by removing or replacing existing elements and/or adding new elements in place.
+
+> [!Warning]
+> This method mutates the calling array
 
 #### Arguments
 | Argument       | Type         | Description  |
@@ -616,12 +631,15 @@ Does not accept any arguments.
 ## .unshift
 > `array.unshift(element*)`
 
-Returns a string representing the specified array and its elements.
+Adds one or more elements to the beginning of an array and returns the new length of the array.
+
+> [!Warning]
+> This method mutates the calling array
 
 #### Arguments
 | Argument       | Type         | Description  |
 | :------------- | :----------- | :----------- |
-|  element*      | *            | Required. The elements to add to the front of the array. |
+|  element*      | alnum/object | Required. The elements to add to the front of the array. |
 
 
 
