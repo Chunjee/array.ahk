@@ -576,7 +576,7 @@ Sorts the elements of an array in place and returns the sorted array. The defaul
 
 
 ## .splice
-> `array.splice(start, [end])`
+> `array.splice(start, [end, values*])`
 
 Changes the contents of an array by removing or replacing existing elements and/or adding new elements in place.
 
@@ -588,7 +588,7 @@ Changes the contents of an array by removing or replacing existing elements and/
 | :------------- | :----------- | :----------- |
 |  start         | number       | Required. The index at which to start changing the array. If greater than the length of the array, start will be set to the length of the array. In this case, no element will be deleted but the method will behave as an adding function, adding as many element as provided. If negative, it will begin that many elements from the end of the array. |
 |  deleteCount    | number       | Optional. (Default `-1`) An integer indicating the number of elements in the array to remove. |
-|  values*        | number       | Optional. (Default `""`) The elements to add to the array. If you do not specify any elements, it will only remove elements from the array. |
+|  values*        | alnum/object | Optional. (Default `""`) The values to add to the array. If you do not specify any elements, it will only remove from the array. |
 
 
 #### Returns
