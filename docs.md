@@ -68,8 +68,8 @@ fn_isEven(o)
 
 Fill all the array elements with a static value.
 
-> [!Warning]
-> This method mutates the calling array
+> [!Note]
+> This method modifies the calling array
 
 #### Arguments
 | Argument       | Type         | Description  |
@@ -440,8 +440,8 @@ fn_reduceNestedArray(previousValue, currentValue)
 
 Reverses an array in place. The first array element becomes the last, and the last array element becomes the first.
 
-> [!Warning]
-> This method mutates the calling array
+> [!Note]
+> This method modifies the calling array
 
 #### Arguments
 Does not accept any arguments.
@@ -464,8 +464,8 @@ Does not accept any arguments.
 
 Removes the first element from an array and returns that removed element. This method modifies the array.
 
-> [!Warning]
-> This method mutates the calling array
+> [!Note]
+> This method modifies the calling array
 
 #### Arguments
 Does not accept any arguments.
@@ -551,8 +551,8 @@ fn_isEven(o)
 
 Sorts the elements of an array in place and returns the sorted array. The default sort order is ascending. The function is invoked with two arguments; (firstElement, secondElement).
 
-> [!Warning]
-> This method mutates the calling array
+> [!Note]
+> This method modifies the calling array
 
 #### Arguments
 | Argument       | Type         | Description  |
@@ -580,8 +580,8 @@ Sorts the elements of an array in place and returns the sorted array. The defaul
 
 Changes the contents of an array by removing or replacing existing elements and/or adding new elements in place.
 
-> [!Warning]
-> This method mutates the calling array
+> [!Note]
+> This method modifies the calling array
 
 #### Arguments
 | Argument       | Type         | Description  |
@@ -633,8 +633,8 @@ Does not accept any arguments.
 
 Adds one or more elements to the beginning of an array and returns the new length of the array.
 
-> [!Warning]
-> This method mutates the calling array
+> [!Note]
+> This method modifies the calling array
 
 #### Arguments
 | Argument       | Type         | Description  |
