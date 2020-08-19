@@ -678,9 +678,9 @@ Does not accept any arguments.
 ; => ["Bill, "Ted, "Socrates"]
 
 array := []
-array.insert("x", "Bill")
-array.insert("y", "Ted")
-array.insert("z", "Socrates")
+array.InsertAt("x", "Bill")
+array.InsertAt("y", "Ted")
+array.InsertAt("z", "Socrates")
 array.values()
 ; => ["Bill, "Ted, "Socrates"]
 ```
