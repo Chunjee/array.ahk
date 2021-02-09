@@ -1,31 +1,31 @@
 ## array.ahk
-Conversion of JavaScript's Array methods to AutoHotKey
+Conversion of JavaScript's Array methods to AutoHotkey
 
-AutoHotKey lacks built-in iteration helper methods (as of 1.1.33) to perform many of the common array behaviors found in other languages. This package ports most of JavaScript's Array object methods to AutoHotKey's Array object.
+AutoHotkey lacks built-in iteration helper methods (as of 1.1.33) to perform many of the common array behaviors found in other languages. This package ports most of JavaScript's Array object methods to AutoHotkey's Array object.
 
 ### Ported Methods
-* concat
-* every
-* fill
-* filter
-* find
-* findIndex
-* forEach
-* includes
-* indexOf
-* join
-* lastIndexOf
-* map
-* reduce
-* reduceRight
-* reverse
-* shift
-* slice
-* some
-* sort
-* splice
-* toString
-* unshift
+* [concat](/docs?id=concat)
+* [every](/docs?id=every)
+* [fill](/docs?id=fill)
+* [filter](/docs?id=filter)
+* [find](/docs?id=find)
+* [findIndex](/docs?id=findIndex)
+* [forEach](/docs?id=forEach)
+* [includes](/docs?id=includes)
+* [indexOf](/docs?id=indexOf)
+* [join](/docs?id=join)
+* [lastIndexOf](/docs?id=lastIndexOf)
+* [map](/docs?id=map)
+* [reduce](/docs?id=reduce)
+* [reduceRight](/docs?id=reduceRight)
+* [reverse](/docs?id=reverse)
+* [shift](/docs?id=shift)
+* [slice](/docs?id=slice)
+* [some](/docs?id=some)
+* [sort](/docs?id=sort)
+* [splice](/docs?id=splice)
+* [toString](/docs?id=toString)
+* [unshift](/docs?id=unshift)
 
 ### Installation
 
@@ -63,7 +63,7 @@ fn_doubleInt(int) {
 
 ; Map to object property
 arrayObj := [{"name": "bob", "age": 22}, {"name": "tom", "age": 51}]
-arrayObj.map(func("fn_returnName")) 
+arrayObj.map(func("fn_returnName"))
 ; => ["bob", "tom"]
 
 fn_returnName(obj) {
@@ -87,7 +87,7 @@ fn_returnProp(prop, obj) {
 
 JavaScript does not expose start/end or left/right parameters and neither does this sort.
 
-`Array.sort([params*])`  
+`Array.sort([params*])`
 ```autohotkey
 arrayInt := [11,9,5,10,1,6,3,4,7,8,2]
 arrayInt.sort()
