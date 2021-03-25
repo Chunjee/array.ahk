@@ -76,11 +76,11 @@ Fill all the array elements with a static value.
 | :------------- | :----------- | :----------- |
 |  value         | alnum        | Required. The value to fill the array with. |
 |  start         | number       | Optional. (Default `1`) The index to start filling the array. If negative, it is treated as array.Count() + start |
-|  end := array.Count() | number       | Optional. The value to fill the array with. If negative, it is treated as array.Count() + end |
+|  end           | number       | Optional. (`array.Count()`) The value to fill the array with. If negative, it is treated as array.Count() + end |
 
 
 #### Returns
-(array): The modified array, filled with `value`.
+(array): The modified array, filled with value.
 
 
 #### Example
