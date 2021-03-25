@@ -747,10 +747,10 @@ body {
 }
 .token.boolean,
 .token.number {
-	color: #f5e44b;
+	color: #e5c07b;
 }
 .token.punctuation {
-	color: #e4e4e4;
+	color: var(--codeTextColor);
 }
 .token.property {
 	color: #c08b30;
@@ -820,9 +820,8 @@ body {
 .markdown-section pre > code {
 	-moz-osx-font-smoothing: initial;
 	-webkit-font-smoothing: initial;
-	background-color: #0e2233;
 	border-radius: 2px;
-	color: #ffffff;
+	color: var(--codeTextColor);
 	display: block;
 	font-family: Roboto Mono, Monaco, courier, monospace;
 	font-size: 0.8rem;
