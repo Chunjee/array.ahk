@@ -41,7 +41,7 @@ Tests whether all elements in the array pass the test implemented by the provide
 
 
 #### Returns
-(Boolean): `true` if all elements pass the test function, else `false` if any did not.
+(boolean): `true` if all elements pass the test function, else `false` if any did not.
 
 
 #### Example
