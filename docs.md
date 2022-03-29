@@ -557,7 +557,13 @@ Sorts the elements of an array in place and returns the sorted array. The defaul
 #### Arguments
 | Argument       | Type         | Description  |
 | :------------- | :----------- | :----------- |
-|  function(firstElement, secondElement)      | function     | Optional. Specifies a function that defines the sort order. If omitted, the array elements are sorted according to their alphanum value |
+|  compareFunction(firstElement, secondElement)      | function     | Optional. Specifies a function that defines the sort order. If omitted, the array elements are sorted according to their alphanum value. If `compareFunction` is supplied, array elements are sorted according to the return value|
+
+| compareFunction(a, b) return value | sort order |
+| :------------- | :----------- |
+| > 0			 | sort `b` before `a` |
+| < 0			 | sort `a` before `b` |
+| == 0			 | keep original order of `a` and `b` |
 
 
 #### Returns
