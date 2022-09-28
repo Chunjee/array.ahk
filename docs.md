@@ -367,7 +367,7 @@ fn_timesTwo(o)
 }
 
 
-["Bill", "Ted"].map("fn_upcase")
+["Bill", "Ted"].map(func("fn_upcase"))
 ; => ["BILL", "TED"]
 
 fn_upcase(o)
