@@ -258,11 +258,11 @@ Returns the first index at which a given element can be found in the array, or `
 
 #### Example
 ```autohotkey
-[1, 2, 3, 4].indexOf(2)
-; => 2
-
 ["Bill", "Ted"].indexOf("Socrates")
 ; => -1
+
+["four", "three", "two", "one"].indexOf("three")
+; => 2
 ```
 <!-- end of indexOf -->
 
