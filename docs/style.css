@@ -756,7 +756,7 @@ body {
 	color: var(--codeTextColor);
 }
 .token.property {
-	color: #c08b30;
+	color: var(--textColor);
 }
 .token.tag {
 	color: #2973b7;
@@ -786,7 +786,7 @@ body {
 	color: var(--accent);
 }
 .token.function {
-	color: #baac29;
+	color: #86b9f5;
 }
 .token.keyword {
 	color: #6679cc;
