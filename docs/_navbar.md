@@ -1,5 +1,5 @@
 - Translations
-  - [:us: English](/)
+  - [:us: English](/docs)
   - [:jp: 日本語](/ja/docs)
   - [:de: Deutsch](/de/docs)
   - [:es: Español](/es/docs)
