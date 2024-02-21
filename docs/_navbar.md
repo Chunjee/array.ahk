@@ -1,0 +1,10 @@
+- Translations
+  - [:us: English](/)
+  - [:jp: 日本語](/ja/)
+  - [:de: Deutsch](/de/)
+  - [:es: Español](/es/)
+  - [:fr: Français](/fr/)
+  - [:kr: 한국어](/ko/)
+  - [:portugal: Português](/pt/)
+  - [:ru: Русский](/ru/)
+  - [:cn: 中文](/zh/)
