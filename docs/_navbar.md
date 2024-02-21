@@ -4,6 +4,7 @@
   - [:de: Deutsch](/de/docs)
   - [:es: Español](/es/docs)
   - [:fr: Français](/fr/docs)
+  - [:it: Italiano](/fr/docs)
   - [:kr: 한국어](/ko/docs)
   - [:portugal: Português](/pt/docs)
   - [:ru: Русский](/ru/docs)
