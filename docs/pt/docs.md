@@ -415,7 +415,7 @@ Aplica uma função a um acumulador e a cada valor do array (da direita para a e
 #### Argumentos
 | Argument       | Type         | Description  |
 | :------------- | :----------- | :----------- |
-|  function(accumulator, element, index, array)      |      | Obrigatório. Uma função a ser executada em cada elemento do array (exceto o primeiro, se nenhum valor inicial for fornecido). |
+|  function(accumulator, element, index, array)      | função     | Obrigatório. Uma função a ser executada em cada elemento do array (exceto o primeiro, se nenhum valor inicial for fornecido). |
 
 
 #### Devoluções

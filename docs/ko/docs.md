@@ -415,7 +415,7 @@ fn_addition(a, b)
 #### 인수
 | Argument       | Type         | Description  |
 | :------------- | :----------- | :----------- |
-|  function(accumulator, element, index, array)      |      | 필수의. 배열의 각 요소에 대해 실행되는 함수입니다(initialValue가 제공되지 않은 경우 첫 번째 요소 제외). |
+|  function(accumulator, element, index, array)      | 기능     | 필수의. 배열의 각 요소에 대해 실행되는 함수입니다(initialValue가 제공되지 않은 경우 첫 번째 요소 제외). |
 
 
 #### 보고

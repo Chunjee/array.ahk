@@ -415,7 +415,7 @@ Aplica una función contra un acumulador y cada valor del array (de derecha a iz
 #### Argumentos
 | Argument       | Type         | Description  |
 | :------------- | :----------- | :----------- |
-|  function(accumulator, element, index, array)      |      | Requerido. Una función para ejecutar en cada elemento de la matriz (excepto el primero, si no se proporciona un valor inicial). |
+|  function(accumulator, element, index, array)      | función     | Requerido. Una función para ejecutar en cada elemento de la matriz (excepto el primero, si no se proporciona un valor inicial). |
 
 
 #### Devoluciones

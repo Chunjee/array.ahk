@@ -415,7 +415,7 @@ fn_addition(a, b)
 #### 引数
 | Argument       | Type         | Description  |
 | :------------- | :----------- | :----------- |
-|  function(accumulator, element, index, array)      |      | 必須. 配列内の各要素に対して実行する関数 (initialValue が指定されていない場合、最初の要素を除く)。 |
+|  function(accumulator, element, index, array)      | 関数     | 必須. 配列内の各要素に対して実行する関数 (initialValue が指定されていない場合、最初の要素を除く)。 |
 
 
 #### 戻り値

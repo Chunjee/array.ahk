@@ -415,7 +415,7 @@ Applique une fonction à un accumulateur et à chaque valeur du tableau (de droi
 #### Arguments
 | Argument       | Type         | Description  |
 | :------------- | :----------- | :----------- |
-|  function(accumulator, element, index, array)      |      | Requis. Une fonction à exécuter sur chaque élément du tableau (sauf le premier, si aucune valeur initiale n'est fournie). |
+|  function(accumulator, element, index, array)      | fonction     | Requis. Une fonction à exécuter sur chaque élément du tableau (sauf le premier, si aucune valeur initiale n'est fournie). |
 
 
 #### Retour

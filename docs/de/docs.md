@@ -415,7 +415,7 @@ Wendet eine Funktion auf einen Akkumulator und jeden Wert des Arrays (von rechts
 #### Argumente
 | Argument       | Type         | Description  |
 | :------------- | :----------- | :----------- |
-|  function(accumulator, element, index, array)      |      | Erforderlich. Eine Funktion, die für jedes Element im Array ausgeführt wird (mit Ausnahme des ersten, wenn kein initialValue angegeben wird). |
+|  function(accumulator, element, index, array)      | funktion     | Erforderlich. Eine Funktion, die für jedes Element im Array ausgeführt wird (mit Ausnahme des ersten, wenn kein initialValue angegeben wird). |
 
 
 #### Kehrt zurück

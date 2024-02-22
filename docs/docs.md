@@ -415,7 +415,7 @@ Applies a function against an accumulator and each value of the array (from righ
 #### Arguments
 | Argument       | Type         | Description  |
 | :------------- | :----------- | :----------- |
-|  function(accumulator, element, index, array)      |      | Required. A function to execute on each element in the array (except for the first, if no initialValue is supplied). |
+|  function(accumulator, element, index, array)      | function     | Required. A function to execute on each element in the array (except for the first, if no initialValue is supplied). |
 
 
 #### Returns
