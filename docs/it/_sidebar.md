@@ -1,3 +1,3 @@
-- [Home](/it/README)
+- [Home](/it/readme)
 
 	- [Documentation](/it/docs)
