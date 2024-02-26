@@ -10,7 +10,7 @@ Conversion of JavaScript's Array methods to AutoHotkey
 [![npm](https://img.shields.io/npm/dm/array.ahk?style=for-the-badge&logo=npm)](https://www.npmjs.com/package/array.ahk) [![docs](https://img.shields.io/badge/full-documentation-blue?style=for-the-badge)](https://chunjee.github.io/array.ahk) ![license](https://img.shields.io/npm/l/array.ahk?color=tan&style=for-the-badge)
 
 
-AutoHotkey lacks built-in iteration helper methods (as of 1.1.33) to perform many of the common array behaviors found in other languages. This package ports most of JavaScript's Array object methods to AutoHotkey's Array object.
+AutoHotkey lacks built-in iteration helper methods to perform many of the common array behaviors found in other languages. This package ports most of JavaScript's Array object methods to AutoHotkey's Array object. Because Javascript is zero-based and AutoHotkey is not, there are some slight differences.
 
 ### Ported Methods
 * concat
@@ -35,6 +35,7 @@ AutoHotkey lacks built-in iteration helper methods (as of 1.1.33) to perform man
 * splice
 * toString
 * unshift
+* values
 
 ## Installation
 
