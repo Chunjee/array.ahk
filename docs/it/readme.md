@@ -2,9 +2,9 @@
 ## Conversione dei metodi Array di JavaScript in AutoHotkey
 
 
-AutoHotkey non dispone di metodi di supporto per l&#x27;iterazione integrati (a partire dalla versione 1.1.33) per eseguire molti dei comportamenti comuni degli array riscontrati in altri linguaggi. 
+AutoHotkey (a partire dalla versione 1.1.33) non dispone di metodi per l&#x27;iterazione integrati per eseguire molti dei comportamenti comuni degli array come in altri linguaggi.
 
-### Metodi portati
+### Metodi esportati
 * [concat](/it/docs?id=concat)
 * [every](/it/docs?id=every)
 * [fill](/it/docs?id=fill)
@@ -27,10 +27,11 @@ AutoHotkey non dispone di metodi di supporto per l&#x27;iterazione integrati (a 
 * [splice](/it/docs?id=splice)
 * [toString](/it/docs?id=toString)
 * [unshift](/it/docs?id=unshift)
+* [values](/it/docs?id=values)
 
 ### Installazione
 
-In un terminale o una riga di comando accedi alla cartella del tuo progetto:
+In un terminale o una riga di comando con accesso alla cartella del tuo progetto:
 
 ```bash
 npm install array.ahk
@@ -52,7 +53,7 @@ msgbox, % [1,2,3].join()
 
 Usage: `array.<fn>([params*])`
 ```autohotkey
-; Mappa a valore raddoppiato
+; Mappare a valori raddoppiati
 arrayInt := [1, 5, 10]
 arrayInt.map(func("fn_doubleInt"))
 ; => [2, 10, 20]
@@ -62,7 +63,7 @@ fn_doubleInt(int) {
 }
 
 
-; Mappare la proprietà dell&#x27;oggetto
+; Mappare a oggetti con proprietà
 arrayObj := [{"name": "bob", "age": 22}, {"name": "tom", "age": 51}]
 arrayObj.map(func("fn_returnName"))
 ; => ["bob", "tom"]
@@ -72,7 +73,7 @@ fn_returnName(obj) {
 }
 
 
-; Concatenamento dei metodi
+; Concatenamento di metodi
 arrayObj := [{"name": "bob", "age": 22}, {"name": "tom", "age": 51}]
 msgbox, % arrayObj.map(func("fn_returnProp").bind("age"))
 	.map(func("fn_doubleInt"))
@@ -86,7 +87,7 @@ fn_returnProp(prop, obj) {
 
 ### Ordinamento
 
-JavaScript non espone i parametri di inizio/fine o sinistra/destra e nemmeno questo ordinamento.
+JavaScript non espone i parametri di inizio/fine o sinistra/destra, tantomeno questa funzione.
 
 `array.sort([params*])`
 ```autohotkey

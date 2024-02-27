@@ -27,6 +27,7 @@
 * [splice](/ja/docs?id=splice)
 * [toString](/ja/docs?id=toString)
 * [unshift](/ja/docs?id=unshift)
+* [values](/ja/docs?id=values)
 
 ### インストール
 

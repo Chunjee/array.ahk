@@ -27,6 +27,7 @@
 * [splice](/ko/docs?id=splice)
 * [toString](/ko/docs?id=toString)
 * [unshift](/ko/docs?id=unshift)
+* [values](/ko/docs?id=values)
 
 ### 설치
 

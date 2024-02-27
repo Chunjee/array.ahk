@@ -27,6 +27,7 @@
 * [splice](/ru/docs?id=splice)
 * [toString](/ru/docs?id=toString)
 * [unshift](/ru/docs?id=unshift)
+* [values](/ru/docs?id=values)
 
 ### Монтаж
 

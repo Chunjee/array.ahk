@@ -27,6 +27,7 @@ AutoHotkey carece de métodos auxiliares de iteración integrados (a partir de 1
 * [splice](/es/docs?id=splice)
 * [toString](/es/docs?id=toString)
 * [unshift](/es/docs?id=unshift)
+* [values](/es/docs?id=values)
 
 ### Instalación
 

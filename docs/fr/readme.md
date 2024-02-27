@@ -27,6 +27,7 @@ AutoHotkey ne dispose pas de méthodes d&#x27;aide à l&#x27;itération intégr�
 * [splice](/fr/docs?id=splice)
 * [toString](/fr/docs?id=toString)
 * [unshift](/fr/docs?id=unshift)
+* [values](/fr/docs?id=values)
 
 ### Installation
 

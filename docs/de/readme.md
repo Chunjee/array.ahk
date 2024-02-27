@@ -27,6 +27,7 @@ AutoHotkey verfügt nicht über integrierte Iterationshilfsmethoden (ab 1.1.33),
 * [splice](/de/docs?id=splice)
 * [toString](/de/docs?id=toString)
 * [unshift](/de/docs?id=unshift)
+* [values](/de/docs?id=values)
 
 ### Installation
 
