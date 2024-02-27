@@ -415,7 +415,7 @@ fn_addition(a, b)
 #### 论点
 | Argument       | Type         | Description  |
 | :------------- | :----------- | :----------- |
-|  function(accumulator, element, index, array)      |      | 必需的. 对数组中的每个元素执行的函数（如果没有提供初始值，则第一个元素除外）。 |
+|  function(accumulator, element, index, array)      | 功能     | 必需的. 对数组中的每个元素执行的函数（如果没有提供初始值，则第一个元素除外）。 |
 
 
 #### 退货

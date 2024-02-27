@@ -27,6 +27,7 @@ AutoHotkey 缺乏内置的迭代辅助方法（截至 1.1.33) 来执行其他语
 * [splice](/zh/docs?id=splice)
 * [toString](/zh/docs?id=toString)
 * [unshift](/zh/docs?id=unshift)
+* [values](/zh/docs?id=values)
 
 ### 安装
 
