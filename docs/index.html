@@ -34,33 +34,36 @@
 			},
 			loadNavbar: true,
 
-			// translation pages not detected will fallback to the root language page (en)
-			fallbackLanguages: ['jp', 'de', 'es', 'fr', 'ja', 'ko', 'pt', 'zh'],
-
 			// searchbar settings
 			search: {
-				depth: 2, // Headline depth
+				depth: 1, // Headline depth
 				paths: 'auto',
+				// namepasce may need an update if ever updated beyond two characters /^(\/(\w{2}\-*\w{0,2}))?(\/(v1|v2))?/
+				pathNamespaces: /^(\/(\w{2}))?(\/(v1|v2))?/,
 				noData: {
-					'/': 'No results!',
 					'/ja/': '結果がありません！',
 					'/de/': 'Keine Ergebnisse!',
 					'/es/': '¡No hay resultados!',
 					'/fr/': 'Aucun résultat!',
+					'/it/': 'Nessun risultato!',
 					'/ko/': '결과가 없습니다!',
 					'/pt/': 'Sem resultados!',
-					'/zh/': '没有结果!'
+					'/ru/': 'Никаких результатов!',
+					'/zh/': '没有结果!',
+					'/': 'No results!'
 				},
 				placeholder: {
-					'/': 'Type to Search',
 					'/ja/': 'ここにタイプして検索してください',
 					'/de/': 'Suche',
 					'/es/': 'Escriba aquí para buscar',
 					'/fr/': 'Recherche',
+					'/it/': 'Ricerca',
 					'/ko/': '검색하려면 여기에 입력하세요.',
 					'/pt/': 'Digite aqui para pesquisar',
-					'/zh/': '搜索'
-				}
+					'/ru/': 'поиск',
+					'/zh/': '搜索',
+					'/': 'Type to Search'
+				},
 			},
 			// end of searchbar
 
