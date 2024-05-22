@@ -96,11 +96,17 @@ fn_returnProp(prop, obj) {
 
 ### Sorting
 
-JavaScript does not expose start/end or left/right parameters and neither does this sort.
+JavaScript does not use start/end or left/right parameters, and this implementation follows the same approach.
 
-`Array.sort([params*])`
+`array.sort([params*])`
 ```autohotkey
-arrayInt := [11,9,5,10,1,6,3,4,7,8,2]
-arrayInt.sort()
+[11,9,5,10,1,6,3,4,7,8,2].sort()
 ; => [1,2,3,4,5,6,7,8,9,10,11]
+
+
+[11,9,5,10,1,6,3,4,7,8,2].sort(func("fn_reverse"))
+fn_reverse(a, b) {
+	return b - a
+}
+; => [11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1])
 ```
