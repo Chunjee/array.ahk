@@ -12,7 +12,6 @@ Array(prms*) {
 class _Array {
 
 	concat(arrays*) {
-
 		result := []
 
 		; First add the values from the instance being called on
@@ -33,7 +32,6 @@ class _Array {
 
 
 	every(callback) {
-
 		for index, element in this
 			if !callback.Call(element, index, this)
 				return false
@@ -43,7 +41,6 @@ class _Array {
 
 
 	fill(value, start:=0, end:=0) {
-
 		len := this.Count()
 
 		; START: Adjust 1 based index, check signage, set defaults
@@ -72,7 +69,6 @@ class _Array {
 
 
 	filter(callback) {
-
 		result := []
 
 		for index, element in this
@@ -85,7 +81,6 @@ class _Array {
 
 	; Modified to return "" instead of 'undefined'
 	find(callback) {
-
 		for index, element in this
 			if (callback.Call(element, index, this))
 				return element
@@ -95,7 +90,6 @@ class _Array {
 
 
 	findIndex(callback) {
-
 		for index, value in this
 			if (callback.Call(value, index, this))
 				return index
@@ -106,7 +100,6 @@ class _Array {
 
 
 	forEach(callback) {
-
 		for index, element in this
 			callback.Call(element, index, this)
 
@@ -115,13 +108,11 @@ class _Array {
 
 
 	includes(searchElement, fromIndex:=0) {
-
 		return this.indexOf(searchElement, fromIndex) > 0 ? true : false
 	}
 
 
 	indexOf(searchElement, fromIndex:=0) {
-
 		len := this.Count()
 
 		if (fromIndex > 0)
@@ -140,19 +131,16 @@ class _Array {
 	}
 
 
-	join(delim:=",") {
-
+	join(separator:=",") {
 		result := ""
-
-		for index, element in this
-			result .= element (index < this.Count() ? delim : "")
-
+		for index, element in this {
+			result .= element (index < this.Count() ? separator : "")
+		}
 		return result
 	}
 
 
 	keys() {
-
 		result := []
 
 		for key, value in this {
@@ -165,7 +153,6 @@ class _Array {
 	; if the provided index is negative, the array is still searched from front to back
 	; - Are we not able to return the first found starting from the back?
 	lastIndexOf(searchElement, fromIndex:=0) {
-
 		len := this.Count()
 		foundIdx := -1
 
@@ -188,7 +175,6 @@ class _Array {
 
 
 	map(callback) {
-
 		result := []
 
 		for index, element in this
@@ -199,7 +185,6 @@ class _Array {
 
 
 	reduce(callback, initialValue:="__NULL__") {
-
 		len := this.Count()
 
 		; initialValue not defined
@@ -252,7 +237,6 @@ class _Array {
 
 
 	reduceRight(callback, initialValue:="__NULL__") {
-
 		len := this.Count()
 
 		; initialValue not defined
@@ -322,13 +306,11 @@ class _Array {
 
 
 	shift() {
-
 		return this.RemoveAt(1)
 	}
 
 
 	slice(start:=0, end:=0) {
-
 		len := this.Count()
 
 		; START: Adjust 1 based index, check signage, set defaults
@@ -362,7 +344,6 @@ class _Array {
 
 
 	some(callback) {
-
 		for index, value in this
 			if callback.Call(value, index, this)
 				return true
@@ -372,7 +353,6 @@ class _Array {
 
 
 	sort(compare_fn:=0) {
-
 		; Quicksort
 		this._Call(this, compare_fn)
 
@@ -381,7 +361,6 @@ class _Array {
 
 
 	splice(start, deleteCount:=-1, args*) {
-
 		len := this.Count()
 		exiting := []
 
@@ -428,7 +407,6 @@ class _Array {
 
 
 	unshift(args*) {
-
 		for index, value in args
 			this.InsertAt(A_Index, value)
 
@@ -437,7 +415,6 @@ class _Array {
 
 
 	values() {
-
 		result := []
 
 		for key, value in this {
